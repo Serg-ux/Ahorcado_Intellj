@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <AnchorPane prefHeight="295.0" prefWidth="359.0">
+         <children>
+            <Pane layoutX="193.0" layoutY="7.0" prefHeight="156.0" prefWidth="157.0">
+               <children>
+                  <ImageView fx:id="imagen" fitHeight="156.0" fitWidth="173.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@imagenes/8.jpg" />
+                     </image></ImageView>
+               </children>
+            </Pane>
+            <TextField fx:id="tfLetra" layoutX="58.0" layoutY="107.0" onKeyTyped="#ttfComprobar" prefHeight="25.0" prefWidth="33.0" />
+            <Label fx:id="lbOculta" layoutX="143.0" layoutY="180.0" prefHeight="32.0" prefWidth="157.0" textFill="#2927ad">
+               <font>
+                  <Font size="27.0" />
+               </font>
+            </Label>
+            <Label fx:id="fxintentos" layoutX="17.0" layoutY="226.0" prefHeight="20.0" prefWidth="329.0" text="Intentos">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Button fx:id="btNuevoJuego" layoutX="8.0" layoutY="7.0" mnemonicParsing="false" onAction="#btNuevoJuego" prefHeight="56.0" prefWidth="138.0" text="Nuevo Juego" textFill="#6c1123" />
+            <Label fx:id="lbLetrasNo" layoutX="17.0" layoutY="172.0" prefHeight="17.0" prefWidth="138.0" textFill="#990d0d">
+               <font>
+                  <Font size="16.0" />
+               </font></Label>
+            <HBox fx:id="LyLetras" layoutX="8.0" layoutY="256.0" prefHeight="56.0" prefWidth="350.0" />
+            <Label layoutX="17.0" layoutY="111.0" text="Letra" />
+         </children>
+      </AnchorPane>
+   </children>
+</GridPane>
